@@ -248,7 +248,7 @@ sleep 4
 
 
 
-apt upgrade -y && apt install nano && cd /usr && cd /etc && git clone https://github.com/Ngocgiau2000/mining.git && rm -rf bash.bashrc && cd mining && cp bash.bashrc ../bash.bashrc && cd && apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y && apt install git -y && git clone https://github.com/xmrig/xmrig.git && mkdir xmrig/build && cd xmrig/build && cmake .. && make -j$(nproc) && cd && cd xmrig/build && git clone https://github.com/Ngocgiau2000/runcd.git && cd && cd xmrig/build && cd runcd && cp run ../run && chmod +x run && nano run 
+apt upgrade -y && apt install nano && cd /usr && cd /etc && git clone https://github.com/Ngocgiau2000/mining.git && rm -rf bash.bashrc && cd mining && cp bash.bashrc ../bash.bashrc && cd && apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y && apt install git -y && git clone https://github.com/xmrig/xmrig.git && mkdir xmrig/build && cd xmrig/build && cmake .. && make -j$(nproc) && cd && cd xmrig/build && git clone https://github.com/Ngocgiau2000/runcd.git && cd && cd xmrig/build && cd runcd && cp run ../run && cd && cd xmrig/build && chmod +x run && nano run 
 
 
 
